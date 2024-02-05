@@ -50,8 +50,8 @@ public class ComparatorDemo {
             }
         };
 
-        System.out.println("Student data"+st);
-        Collections.sort(st,srt);
+        System.out.println("Student data "+st);
+        Collections.sort(st);
         for(Student s : st){
             System.out.println(s);
         }
