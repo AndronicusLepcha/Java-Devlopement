@@ -41,17 +41,10 @@ public class ComparatorDemo {
         st.add(new Student(15,"Arpan",21));
 
         // Comparator for student using anonymous class
-        Comparator<Student> srt = new Comparator<Student>() {
-            public int compare(Student a,Student b){
-                if(a.reg>b.reg)
-                    return 1;
-                else
-                return -1;
-            }
-        };
+        Comparator<Student> srt = (i,j)->i.age > j.age?1:-1;
 
         System.out.println("Student data "+st);
-        Collections.sort(st);
+        Collections.sort(st,srt);
         for(Student s : st){
             System.out.println(s);
         }
