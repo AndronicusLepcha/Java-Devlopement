@@ -9,6 +9,18 @@ public class Student{
             this.age=age;
     }
 
+    public int getReg() {
+        return reg;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
     @Override
     public String toString() {
         return "Student [reg=" + reg + ", name=" + name + ", age=" + age + "]";

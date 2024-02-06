@@ -48,9 +48,5 @@ public class ComparatorDemo {
         for(Student s : st){
             System.out.println(s);
         }
-
-
-
-      
     }
 }
