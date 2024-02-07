@@ -1,4 +1,4 @@
-public class Student{
+public class Student implements Comparable<Student>{
     public int reg;
     public String name;
     public int age;
@@ -26,14 +26,8 @@ public class Student{
         return "Student [reg=" + reg + ", name=" + name + ", age=" + age + "]";
     }
 
-    // @Override
-    // public int compareTo(Student that) {
-    //     if(this.reg>that.reg)
-    //                 return 1;
-    //             else
-    //             return -1;
-        
-    // }
-    
-    
+    @Override
+    public int compareTo(Student arg0) {
+        return this.age - arg0.age;
+    }
 }
